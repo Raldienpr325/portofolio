@@ -7,8 +7,6 @@ a {
     text-decoration: none;
 }
 
-
-
 *,
 body {
     font-family: 'MyFont';
@@ -136,17 +134,15 @@ ul.parent-icon li:nth-child(4) a:before {
 }
 
 .hero-profile {
-    position: absolute;
-    top: 65%;
+    position: relative;
+    bottom: 120px;
     left: 50%;
     width: 100%;
-
     transform: translate(-50%, -50%);
 }
 
 .hero-profile span {
     color: #D1512D;
-    font-weight: bold;
     font-size: 54px;
 }
 
@@ -284,6 +280,7 @@ svg {
     margin-top: 150px;
     margin-left: 20px;
 }
+
 
 .title-stack {
     margin-top: 90px;
