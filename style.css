@@ -41,6 +41,7 @@ li a:hover {
 ul.parent-icon {
     display: flex;
     position: absolute;
+    margin-top: 139px;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -109,7 +110,7 @@ ul.parent-icon li:nth-child(4) a:before {
 }
 
 .img-profile {
-    opacity: 20%;
+    opacity: 25%;
     margin-left: auto;
     margin-right: auto;
     width: 676px;
@@ -122,27 +123,30 @@ ul.parent-icon li:nth-child(4) a:before {
 #projects {
     margin: 20px;
     height: 500px;
+    margin-top: 139px;
     background-color: rgb(236, 232, 232);
-
+    border-radius: 45px 45px 0 0;
 }
 
 #contact {
     height: 55px;
     padding: 20px;
     font-size: 12px;
+    margin: 20px;
     background-color: rgb(197, 196, 196);
 }
 
 .hero-profile {
     position: relative;
-    bottom: 120px;
+    bottom: 180px;
     left: 50%;
     width: 100%;
     transform: translate(-50%, -50%);
 }
 
 .hero-profile span {
-    color: #D1512D;
+    color: brown;
+    font-weight: bold;
     font-size: 54px;
 }
 
@@ -156,7 +160,7 @@ ul.parent-icon li:nth-child(4) a:before {
     display: flex;
     height: 280px;
     width: 200px;
-    background-color: #D1512D;
+    background-color: brown;
     border-radius: 10px;
     box-shadow: -1rem 0 3rem rgb(38, 38, 38);
     margin-left: -50px;
