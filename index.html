@@ -15,15 +15,32 @@
 </head>
 
 <body>
-    <ul>
+    <div class="wrapper">
+        <nav>
+            <div class="container-flex">
+                <div class="burger">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <div class="bg-sidebar"></div>
+                <ul class="sidebar">
+                    <li><a href="#profile">PROFILE();</a></li>
+                    <li><a href="#projects">PROJECTS();</a></li>
+                    <li><a href="#contact">CONTACT();</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- <ul class="w-full px-4">
         <li><a href="#profile">PROFILE();</a></li>
         <li><a href="#projects">PROJECTS();</a></li>
         <li><a href="#contact">CONTACT();</a></li>
-    </ul>
+    </ul> -->
 
     <section id="profile">
         <center>
-            <div class="hero" style="height: 690px;">
+            <div class="container-hero">
                 <img class="img-profile" src="img/PORTOFOLIO-removebg-preview.png">
                 <div class="hero-profile" style="font-size: 44px;">
                     <p>ꦫꦢꦼꦤ꧀ <span>Aldien Prayoga</span></p>
@@ -32,6 +49,7 @@
                 </div>
             </div>
         </center>
+
         <h2 class="text-center" style="margin-top: 50px;margin-bottom:-50px;">LET'S CONNECT !</h2>
         <ul class="parent-icon">
             <li>
@@ -50,7 +68,7 @@
             </li>
         </ul>
     </section>
-    <section id="projects">
+    <!-- <section id="projects">
         <div class="row">
             <div class="col-6">
                 <div class="container">
@@ -134,13 +152,24 @@
         <div class="footer text-center">
             <p>COPYRIGHT 2022 RALDIENPR</p>
         </div>
-    </section>
+    </section> -->
 </body>
 
 </html>
 <script>
-    function wasclicked() {
-        var testing = document.getElementById('wasclick');
-        testing.innerHTML = 'location href = #projects'
-    }
+    const burger = document.querySelector('.burger')
+    const sidebar = document.querySelector('.sidebar')
+    const bgSidebar = document.querySelector('.bg-sidebar')
+
+    burger.addEventListener('click', function () {
+        this.classList.toggle('change')
+        sidebar.classList.toggle('change')
+        bgSidebar.classList.toggle('change')
+    })
+
+    bgSidebar.addEventListener('click', function () {
+        this.classList.remove('change')
+        sidebar.classList.remove('change')
+        burger.classList.remove('change')
+    })
 </script>
